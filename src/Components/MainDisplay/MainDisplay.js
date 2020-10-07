@@ -6,10 +6,9 @@ import MyContext from '../../MyContext';
 
 // relies on NotesToBeDisplayed
 function MainDisplay (props){
-	console.log(props)
-	const displayNotes = []//props.notesToBeDisplayed().map(note =>
-	// <NoteCard key={note.id} noteId={note.id} name={note.name} modified={note.modified}/>
-	// )};
+	const displayNotes = props.notesToBeDisplayed().map(note =>
+	<NoteCard key={note.id} noteId={note.id} name={note.name} modified={note.modified}/>)
+
 
 	return (
 		<div className="main-display">

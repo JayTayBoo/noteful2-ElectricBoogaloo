@@ -54,7 +54,7 @@ notesToBeDisplayed = () => {return MyContext._currentValue.selectedFolderId ? My
 								selectedFolderId={value.selectedFolderId} />} />
 
 						<Route exact path="/"
-							render={() => { if (value.selectedFolderId) this.viewAll(); return <MainDisplay notesToBeDisplayed={this.notesToBeDisplayed(value.notes)} /> }} />
+							render={() => { if (value.selectedFolderId) this.viewAll(); return <MainDisplay notesToBeDisplayed={this.notesToBeDisplayed} /> }} />
 
 						<Route path='/folder/:folderId'
 							render={() => <FolderMenu
