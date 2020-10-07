@@ -29,8 +29,8 @@ class App extends Component {
 		folders: [],
 	}
 
-setSelectedFolderId = (id) => {console.log('updated state in set'); MyContext._currentValue.selectedFolderId({ selectedFolderId: id });}
-viewAll = () => {MyContext._currentValue.selectedFolderId({ selectedFolderId: null });}
+setSelectedFolderId = (id) => {return MyContext._currentValue['selectedFolderId'] = id ;}
+viewAll = () => {return MyContext._currentValue['selectedFolderId'] = null ;}
 notesToBeDisplayed = () => {return MyContext._currentValue.selectedFolderId ? MyContext._currentValue.notes.filter(note => note.folderId === MyContext._currentValue.selectedFolderId) : MyContext._currentValue.notes;}
 
 	render() {

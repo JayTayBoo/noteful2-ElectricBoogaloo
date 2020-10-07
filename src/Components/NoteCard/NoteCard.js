@@ -9,7 +9,7 @@ function NoteCard(props) {
       <h2 className='space2'> {props.name} </h2>
 			</Link>
       <div className='flex-container justify-space-between'>
-        <div>Modified on {props.modified.substring(0,11)}</div>
+        <div>Modified on {props.modified.substring(0,10)}</div>
         <button> Delete Note </button>
       </div>
 		</li>
