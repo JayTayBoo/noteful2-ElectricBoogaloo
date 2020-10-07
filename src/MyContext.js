@@ -8,6 +8,7 @@ const MyContext = React.createContext({
 	selectedFolderId: null,
 })
 
+console.log(MyContext._currentValue)
 MyContext.displayName = 'MyContext';
 
 export default MyContext;
