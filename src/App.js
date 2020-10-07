@@ -41,7 +41,7 @@ class App extends Component {
 					</header>
 					<div className='flex-container'>
 						<Route exact path="/"
-							render={() => <FolderMenu
+							render={() => <FolderMenu 
 								onFolderClick={this.setSelectedFolderId}
 								folders={this.state.folders}
 								selectedFolderId={this.state.selectedFolderId} />} />
