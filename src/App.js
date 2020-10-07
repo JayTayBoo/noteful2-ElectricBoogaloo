@@ -42,8 +42,8 @@ class App extends Component {
 					<div className='flex-container'>
 						<Route exact path="/"
 							render={() => <FolderMenu
-								//onFolderClick={this.setSelectedFolderId}
-								//folders={this.state.folders}
+								onFolderClick={this.setSelectedFolderId}
+								folders={this.state.folders}
 								selectedFolderId={this.state.selectedFolderId} />} />
 
 						<Route exact path="/"
